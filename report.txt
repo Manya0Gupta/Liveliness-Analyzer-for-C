@@ -1,0 +1,9 @@
+Redundant Assignments:
+Line 6: 'x = 9' is never used.
+Line 5: 'y = x' is never used.
+
+Summary:
+Total lines of code: 11
+Total variables declared: 0
+Total assignments: 3
+Redundant assignments: 2

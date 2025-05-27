@@ -1,0 +1,9 @@
+digraph CFG {
+Node0 [label="x = 3"];
+Node0 -> Node1;
+Node1 [label="y = x"];
+Node1 -> Node2;
+Node2 [label="x = 9"];
+Node2 -> Node3;
+Node3 [label="RETURN 0"];
+}
