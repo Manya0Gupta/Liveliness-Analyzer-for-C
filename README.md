@@ -23,52 +23,44 @@ int main() {
     }
     return x;
 }
+```
 
-Example Output
+## Example Output
+```txt
 Intermediate Representation:
-pgsql
-Copy
-Edit
 Line 2: x = 0
 Line 4: y = 5
 Line 5: x = y + 1
 Line 7: RETURN x
 Live Variable Analysis:
-pgsql
-Copy
-Edit
 Redundant assignment at line 4: 'y = 5' is never used.
 Report written to report.txt
 CFG written to cfg.dot
+```
 CFG Visualization
 You can render the generated cfg.dot file using Graphviz:
 
 bash
-Copy
-Edit
+```bash
 dot -Tpng cfg.dot -o cfg.png
+```
 How to Build
 Dependencies
 Make sure the following packages are installed:
 
-bash
-Copy
-Edit
+```bash
 sudo apt update
 sudo apt install flex bison build-essential graphviz
+```
 Build and Run
 Clone the repository and run:
-
-bash
-Copy
-Edit
+```bash
 make
 ./analyzer < test.c
+```
 Team Members
-[Your Name] (Team Lead)
-
+[Manya Gupta] (Team Lead)
 Tanu Gupta
-
 Shreya Yadav
 
 License
